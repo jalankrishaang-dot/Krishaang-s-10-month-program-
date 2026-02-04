@@ -11,8 +11,8 @@ h1{
   color: aliceblue;
 font-size: x-large;
 position: absolute;
-top: 450px;
-right: 500px;
+top: 330px;
+right: 625px;
 }
 
 .img-bar {
@@ -39,24 +39,35 @@ a{
   font-size: xx-large;}
 
 
+h2 { color: aliceblue;
+font-size: x-large;
+text-align: center;}
 
-#block1{
+main {color: aliceblue;
+font-size: x-large;
+text-align: center;
+margin-top: 20px;}
 
-  background-color: aqua;
-  height: 200px;
-  width: 200px;
+
+
+
+#textbold{
+  font-weight: bold;
 }
 
-#block2{
-
-  background-color: red;
-  height: 200px;
-  width: 200px;
+#instructions{
+  display:flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 200px;
 }
 
-#block3{
 
-  background-color: green;
+.block{
+  background-color: rgb(57, 57, 57);
+  width: 250px; 
   height: 200px;
-  width: 200px;
 }
+
+
+
