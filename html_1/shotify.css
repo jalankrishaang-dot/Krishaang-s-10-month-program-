@@ -20,16 +20,20 @@ right: 625px;
   margin: 0 auto;           
   margin-left: -45px;  
   width: 30%;          
-  height: 50px;            
+  height: 135px;            
   object-fit: cover;}       
-nav2 {
+nav2{
   position: absolute;
   top: 50px;
   right: 450px;
   text-emphasis-color: rgb(201, 201, 201);
   font-size: larger,;
     }
-
+header{
+  height: -55px;
+  width: 100%;
+  background-color: rgb(40, 39, 42);
+}
 a{
   color: rgb(255, 255, 255);
   font-size: xx-large;}
@@ -38,6 +42,11 @@ a{
 h2 { color: aliceblue;
 font-size: x-large;
 text-align: center;}
+
+main {color: aliceblue;
+font-size: x-large;
+text-align: center;
+margin-top: 20px;}
 
 
 
@@ -60,50 +69,5 @@ text-align: center;}
   height: 200px;
 }
 
-#continue {display:flex;justify-content: center;
-  gap: 200px;
-  margin-top: 200px;}
 
-.continueblock { background-color: rgb(57, 57, 57);
-  width: 100%; 
-  height: 200px; }
-
-footer {color: aliceblue;
-font-size: xx-large;
-text-align: center;
-margin-top: 0px;
-height: -55px;
-  width: 100%;
-  background-color: rgb(40, 39, 42);}
-
-main {color: aliceblue;
-font-size: x-large;
-text-align: left;}
-
-#nav3 {
-  position: absolute;
-  top: 50px;
-  right: 450px;
-  text-emphasis-color: rgb(201, 201, 201);
-  font-size: larger,;
-    }
-
-
-
-    header {
-    display: flex;
-    justify-content: space-between; /* pushes logo left & nav right */
-    align-items: center; /* vertically centers them */
-    padding: 0 40px;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-nav a {
-    text-decoration: none;
-}
 
