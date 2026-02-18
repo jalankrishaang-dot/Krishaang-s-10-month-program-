@@ -1,73 +1,106 @@
-Shotify.htlm, body {height: 100%;
-margin:0;
-padding:0;
-font-family: 'Times New Roman', Times, serif;}
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
 body {
-  background-color: hwb(0 11% 89%);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1a1a1a;   /* Dark background */
+    color: white;
 }
 
-
-h1{
-  color: aliceblue;
-font-size: x-large;
-position: absolute;
-top: 330px;
-right: 625px;
+/* ================= HEADER ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #2f2f2f;   /* Gray navigation bar */
 }
 
-.img-bar {
-  display: block;            
-  margin: 0 auto;           
-  margin-left: -45px;  
-  width: 30%;          
-  height: 135px;            
-  object-fit: cover;}       
-nav2{
-  position: absolute;
-  top: 50px;
-  right: 450px;
-  text-emphasis-color: rgb(201, 201, 201);
-  font-size: larger,;
-    }
-header{
-  height: -55px;
-  width: 100%;
-  background-color: rgb(40, 39, 42);
-}
-a{
-  color: rgb(255, 255, 255);
-  font-size: xx-large;}
-
-
-h2 { color: aliceblue;
-font-size: x-large;
-text-align: center;}
-
-main {color: aliceblue;
-font-size: x-large;
-text-align: center;
-margin-top: 20px;}
-
-
-
-
-#textbold{
-  font-weight: bold;
+/* Logo */
+#logo-img {
+   /* Proportional size */
+   height: 200px;
+    width: 300px;
+    padding: 10px;
+    background-color: aqua;
 }
 
-#instructions{
-  display:flex;
-  justify-content: center;
-  gap: 200px;
-  margin-top: 200px;
-}
+/* Navigation */
+nav ul {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
 
-
-.block{
-  background-color: rgb(57, 57, 57);
-  width: 250px; 
-  height: 200px;
 }
 
 
 
+nav a {
+   text-decoration: none;
+   color: white;
+}
+
+/* ================= MAIN ================= */
+main {
+    padding: 60px 0;
+}
+
+/* Continue Section */
+#continue {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.continueblock {
+    background-color: #3a3a3a;
+    width: 80%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+/* Instructions Section */
+#instructions {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 120px;
+}
+
+.block {
+    background-color: #3a3a3a;
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Headings */
+
+
+
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #2f2f2f;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+/*
+.homepage{
+  font-size: 30px;
+}*/

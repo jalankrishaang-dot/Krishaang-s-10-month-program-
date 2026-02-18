@@ -1,109 +1,106 @@
-Shotify.htlm, body {height: 100%;
-margin:0;
-padding:0;
-font-family: 'Times New Roman', Times, serif;}
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
 body {
-  background-color: hwb(0 11% 89%);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1a1a1a;   /* Dark background */
+    color: white;
 }
 
-
-h1{
-  color: aliceblue;
-font-size: x-large;
-position: absolute;
-top: 330px;
-right: 625px;
-}
-
-.img-bar {
-  display: block;            
-  margin: 0 auto;           
-  margin-left: -45px;  
-  width: 30%;          
-  height: 50px;            
-  object-fit: cover;}       
-nav2 {
-  position: absolute;
-  top: 50px;
-  right: 450px;
-  text-emphasis-color: rgb(201, 201, 201);
-  font-size: larger,;
-    }
-
-a{
-  color: rgb(255, 255, 255);
-  font-size: xx-large;}
-
-
-h2 { color: aliceblue;
-font-size: x-large;
-text-align: center;}
-
-
-
-
-#textbold{
-  font-weight: bold;
-}
-
-#instructions{
-  display:flex;
-  justify-content: center;
-  gap: 200px;
-  margin-top: 200px;
-}
-
-
-.block{
-  background-color: rgb(57, 57, 57);
-  width: 250px; 
-  height: 200px;
-}
-
-#continue {display:flex;justify-content: center;
-  gap: 200px;
-  margin-top: 200px;}
-
-.continueblock { background-color: rgb(57, 57, 57);
-  width: 100%; 
-  height: 200px; }
-
-footer {color: aliceblue;
-font-size: xx-large;
-text-align: center;
-margin-top: 0px;
-height: -55px;
-  width: 100%;
-  background-color: rgb(40, 39, 42);}
-
-main {color: aliceblue;
-font-size: x-large;
-text-align: left;}
-
-#nav3 {
-  position: absolute;
-  top: 50px;
-  right: 450px;
-  text-emphasis-color: rgb(201, 201, 201);
-  font-size: larger,;
-    }
-
-
-
-    header {
+/* ================= HEADER ================= */
+header {
     display: flex;
-    justify-content: space-between; /* pushes logo left & nav right */
-    align-items: center; /* vertically centers them */
-    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #2f2f2f;   /* Gray navigation bar */
 }
 
+/* Logo */
+#logo-img {
+   /* Proportional size */
+   height: 200px;
+    width: 300px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+/* Navigation */
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 80px;
     list-style: none;
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+
 }
+
+
 
 nav a {
-    text-decoration: none;
+   text-decoration: none;
+   color: white;
 }
 
+/* ================= MAIN ================= */
+main {
+    padding: 60px 0;
+}
+
+/* Continue Section */
+#continue {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.continueblock {
+    background-color: #3a3a3a;
+    width: 80%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+/* Instructions Section */
+#instructions {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 120px;
+}
+
+.block {
+    background-color: #3a3a3a;
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Headings */
+
+
+
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #2f2f2f;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+/*
+.homepage{
+  font-size: 30px;
+}*/
