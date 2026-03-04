@@ -1,1 +1,1 @@
-alert("Hello World!!");
+alert (Welcome to shotify user);
