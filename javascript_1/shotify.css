@@ -8,7 +8,7 @@
 /* ================= BODY ================= */
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #1a1a1a;   /* Dark background */
+    background-color: #000000;   /* Dark background */
     color: white;
 }
 
@@ -17,26 +17,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
     background-color: #2f2f2f;   /* Gray navigation bar */
 }
 
 /* Logo */
 #logo-img {
    /* Proportional size */
-   height: 200px;
+   height: 150px;
     width: 300px;
     padding: 10px;
-    background-color: aqua;
 }
 
 /* Navigation */
 nav ul {
     display: flex;
-    gap: 80px;
+    gap: 110px;
     list-style: none;
     font-size: 45px;
-    text-decoration: none;
+    text-decoration: none; 
     color: white;
 
 }
