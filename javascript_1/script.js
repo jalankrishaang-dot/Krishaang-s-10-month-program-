@@ -1,6 +1,13 @@
 
 let welcomeMessage = "Welcome to shotify user";
 
+ if (enteredUsername == correctUsername && enteredpassword == correctPassword) 
+{console.log("Login successful");
+} 
+else {
+console.log("Login failed");
+}
+
 alert(welcomeMessage);
 
 let message ="work in progress"

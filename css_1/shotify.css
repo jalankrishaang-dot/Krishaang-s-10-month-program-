@@ -8,7 +8,7 @@
 /* ================= BODY ================= */
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #1a1a1a;   /* Dark background */
+    background-color: #000000;   /* Dark background */
     color: white;
 }
 
@@ -24,7 +24,7 @@ header {
 #logo-img {
    /* Proportional size */
    height: 150px;
-    width: 400px;
+    width: 300px;
     padding: 10px;
 }
 
