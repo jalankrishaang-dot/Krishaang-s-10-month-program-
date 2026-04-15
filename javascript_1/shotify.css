@@ -1,15 +1,22 @@
-/* ================= RESET ================= */
+/* ================= RESET & BODY ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================= BODY ================= */
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #b0cdd1;   /* Dark background */
+    background-color: #b0cdd1;
     color: white;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* ================= HEADER ================= */
@@ -17,89 +24,98 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(185, 22%, 61%);   /* Gray navigation bar */
+    background-color: hsl(185, 22%, 61%);
+    padding: 0 5%;
 }
 
-/* Logo */
 #logo-img {
-   /* Proportional size */
-   height: 150px;
-    width: 300px;
+    height: 80px; /* Reduced from 150px */
+    width: auto;
     padding: 10px;
 }
 
-/* Navigation */
 nav ul {
     display: flex;
-    gap: 110px;
+    gap: 40px; /* Reduced from 110px */
     list-style: none;
-    font-size: 45px;
-    text-decoration: none; 
-    color: white;
-
+    font-size: 18px; /* Reduced from 45px */
 }
-
-
 
 nav a {
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+    color: white;
 }
 
-/* ================= MAIN ================= */
-main {
-    padding: 10px 0;   /* smaller space */
-}
-
-#continue {
+/* ================= BLOCKS (Shared Styles) ================= */
+.continueblock, .shotifyblock {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;  /* much smaller gap */
+    flex-direction: column;
+    justify-content: center; /* Vertical center */
+    align-items: center;     /* Horizontal center */
+    background-color: hsl(184, 32%, 70%);
+    width: 100%;
+    min-height: 700px;       /* Reduced from 1500px */
+    margin-top: 10px; 
+    padding: 40px;
+    text-align: center;
 }
 
-.continueblock {
-  display: flex;
-  background-color: hsl(184, 32%, 70%);
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  min-height: 1500px;
-  margin-top: 4px;
-  padding-top: 220px;
-}
-
+/* ================= CONTENT STYLING ================= */
 #detail {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 100px;
-  font-family: 'Shadows Into Light', cursive;
-  color: #3c3d31;
+    margin-top: 20px;
+    font-size: 48px; /* Reduced from 100px */
+    font-family: 'Shadows Into Light', cursive;
+    color: #3c3d31;
 }
 
-#Shotify2 {
-  width: 800px;
-  height: auto;
+#getstarted {
+   margin-top: 20px;
+    font-size: 48px; /* Reduced from 100px */
+    font-family: 'Shadows Into Light', cursive;
+    color: #3c3d31;
 }
 
-.aboutusbutton {
-  display: inline-block;
-  background-color: rgb(93, 142, 154);
-  color: #ffffff;
-  text-decoration: none;
-  padding: 15px 120px;
-  border-radius: 8px;
-  font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
-  cursor: pointer;
+#getstarted2 {
+   margin-top: 5px;
+    font-size: 35px; /* Reduced from 100px */
+    font-family: 'Shadows Into Light', cursive;
+    color: #3c3d31;
+}
+#Shotify2, #Shotify3 {
+    width: 100%;
+    max-width: 400px; /* Limits size so it doesn't take over screen */
+    height: auto;     /* Maintains aspect ratio */
 }
 
-/* Instructions Section */
+/* Buttons */
+.aboutusbutton, .getstarted-btn {
+    display: inline-block;
+    background-color: rgb(93, 142, 154);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 40px; /* Smaller padding */
+    border-radius: 8px;
+    font-size: 18px;    /* Reduced from 50px */  
+}
+
+.aboutusbutton, .getstarted {
+    background-color: rgb(73, 122, 134);
+     display: inline-block;
+    background-color: rgb(93, 142, 154);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 40px; /* Smaller padding */
+    border-radius: 8px;
+    font-size: 18px;    /* Reduced from 50px */ 
+}
+
+/* ================= INSTRUCTIONS ================= */
 #instructions {
     display: flex;
     justify-content: center;
-    gap: 120px;
-    margin-top: 120px;
+    flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
+    gap: 30px;
+    margin: 60px 0;
 }
 
 .block {
@@ -107,27 +123,14 @@ main {
     width: 250px;
     height: 200px;
     border-radius: 8px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Headings */
-
-
-
-
-/* ================= FOOTER ================= */
 footer {
-    background-color: #2f2f2f;
+    background-color: hsl(185, 22%, 61%);
     text-align: center;
-    padding: 20px 0;
-    font-size: 20px;
-    margin-top: 150px;
+    padding: 40px 0;
+    margin-top: 60px;
 }
-
-/*
-.homepage{
-  font-size: 30px;
-}*/
