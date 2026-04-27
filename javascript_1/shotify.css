@@ -29,9 +29,12 @@ header {
 }
 
 #logo-img {
-    height: 80px; /* Reduced from 150px */
-    width: auto;
-    padding: 10px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 36px;
+  color: white;
+  letter-spacing: 0.12em;
+  font-weight: 400;
+  line-height: 1;
 }
 
 nav ul {
@@ -128,9 +131,213 @@ nav a {
     align-items: center;
 }
 
+/* ================= FOOTER ================= */
 footer {
-    background-color: hsl(185, 22%, 61%);
-    text-align: center;
-    padding: 40px 0;
-    margin-top: 60px;
+  background: #1c2b2c;
+  text-align: center;
+  padding: 60px 8% 40px;
 }
+
+.footer-brand {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  color: #7ec8cc;
+  margin-bottom: 32px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: #7ec8cc; }
+
+.footer-rule {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin-bottom: 20px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+}
+
+
+/* ================= PRICING ================= */
+#pricing {
+  padding: 100px 8%;
+  background: #dff0f1;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: left;
+  border: 1.5px solid transparent;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(42,122,127,0.12);
+}
+
+.pricing-card.featured {
+  border-color: #3e9ea4;
+  background: #1c2b2c;
+  color: white;
+}
+
+.plan-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3e9ea4;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 18px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.plan-name {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #3e9ea4;
+  margin-bottom: 10px;
+}
+
+.pricing-card.featured .plan-name { color: #7ec8cc; }
+
+.plan-price {
+  font-family: 'Times New Roman', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1c2b2c;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.pricing-card.featured .plan-price { color: white; }
+
+.plan-price sup {
+  font-size: 22px;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.plan-period {
+  font-size: 13px;
+  color: #3d5254;
+  margin-bottom: 28px;
+}
+
+.pricing-card.featured .plan-period { color: rgba(255,255,255,0.55); }
+
+.plan-divider {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.07);
+  margin-bottom: 28px;
+}
+
+.pricing-card.featured .plan-divider { border-color: rgba(255,255,255,0.1); }
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.plan-features li {
+  font-size: 14px;
+  color: #3d5254;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.pricing-card.featured .plan-features li { color: rgba(255,255,255,0.8); }
+
+.plan-features li::before {
+  content: '✓';
+  color: #3e9ea4;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.pricing-card.featured .plan-features li::before { color: #7ec8cc; }
+
+.plan-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.plan-cta.outline {
+  border: 1.5px solid #3e9ea4;
+  color: #2a7a7f;
+  background: transparent;
+}
+.plan-cta.outline:hover { background: #c4e8ea; }
+
+.plan-cta.solid {
+  background: #3e9ea4;
+  color: white;
+  border: 1.5px solid transparent;
+}
+.plan-cta.solid:hover { background: #2a7a7f; }
+
+.plan-cta.light {
+  border: 1.5px solid rgba(255,255,255,0.25);
+  color: white;
+  background: rgba(255,255,255,0.08);
+}
+.plan-cta.light:hover { background: rgba(255,255,255,0.18); }
