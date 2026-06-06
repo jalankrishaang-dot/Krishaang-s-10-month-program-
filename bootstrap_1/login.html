@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shotify — Login</title>
+
+  <link rel="stylesheet" href="login.css"/>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <h1 class="brand">Shotify</h1>
+    <p class="subtitle">Enter your email to get a login code</p>
+
+    <!-- EMAIL STEP -->
+    <div id="emailStep">
+      <input
+        type="email"
+        id="emailInput"
+        placeholder="Your email address"
+      />
+
+      <button id="sendBtn" onclick="sendCode()">
+        Send Code
+      </button>
+    </div>
+
+    <!-- CODE STEP -->
+    <div id="codeStep" style="display:none;">
+      <input
+        type="text"
+        id="codeInput"
+        placeholder="Enter 6-digit code"
+        maxlength="6"
+      />
+
+      <button id="verifyBtn" onclick="verifyCode()">
+        Verify & Login
+      </button>
+
+      <p class="resend" onclick="resendCode()">
+        Resend code
+      </p>
+    </div>
+
+    <p id="codeMsg"></p>
+
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
